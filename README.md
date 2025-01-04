@@ -5,9 +5,27 @@
 
 To enjoy this experience:
 ```bash
-sudo pacman -S sway swaylock swaybg swayidle waybar mako pavucontrol brightnessctl playerctl
+sudo pacman -S sway swaylock swaybg swayidle waybar mako pavucontrol brightnessctl playerctl kitty ttf-jetbrains-mono-nerd
 paru -S sway-desktop-launcher sway-audio-idle-inhibit
 git clone https://github.com/lasashq/antoine_sway && rm -rf antoine_sway/.git
 cp -rf antoine_sway/* ~
 reboot
 ```
+Apps:
++ WM: sway
++ Bar: waybar
++ terminal emulator: kitty
++ task manager: btop
++ fetch: nitch (I've added a line to display that my WM is sway XD)
++ music player: yamusic-tui
++ audio-visualliser: cava
++ screensavers: unimatrix, pipes.sh
+
+Theme: catppuccin, Can be found on [catppuccin.com](catppuccin.com). For btop tty theme is used.
+
+Enjoy!
+
+Acknowledgements:
+[catppuccin](https://catppuccin.com) - palette, themes for terminal and for many other apps
+[nitch](https://github.com/ssleert/nitch) - very beautiful fetch as it seems to me, but not so many options and very complicated configuration)
+[owl](https://gitlab.com/prolinux410/owl_dots) - many ideas for this rice (especially, for waybar). 
