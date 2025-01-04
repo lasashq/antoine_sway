@@ -34,7 +34,7 @@ output * bg /home/antoine/.config/hypr/space-piano.png fill
 #gtk-theme
 exec gsettings set org.gnome.desktop.interface icon-theme Catppuccin-Mocha-Alt2
 #bspwm-like layout
-exec --no-startup-id /home/antoine/.config/sway-alternating-layout/alternating_layouts.py
+exec --no-startup-id ~/.config/sway-alternating-layout/alternating_layouts.py
 #audio server
 exec pipewire
 exec pipewire-pulse
