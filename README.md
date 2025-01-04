@@ -26,6 +26,9 @@ Theme: catppuccin, Can be found on [catppuccin.com](catppuccin.com). For btop tt
 Enjoy!
 
 Acknowledgements:
+
 [catppuccin](https://catppuccin.com) - palette, themes for terminal and for many other apps
+
 [nitch](https://github.com/ssleert/nitch) - very beautiful fetch as it seems to me, but not so many options and very complicated configuration)
+
 [owl](https://gitlab.com/prolinux410/owl_dots) - many ideas for this rice (especially, for waybar). 
