@@ -1,0 +1,146 @@
+// -*- mode: jsonc -*-
+{
+	"height": 40,
+	"width": 1904,
+	"margin-top": 5,
+	"modules-left": [
+		"custom/menu",
+		"sway/workspaces",
+		"cava",
+	],
+	"modules-center": [
+		"mpris",
+	],
+	"modules-right": [
+		"tray",
+		"sway/language",
+		"pulseaudio",
+		"network",
+		"clock",
+		"battery",
+		"custom/power",
+		"custom/clock",
+	],
+	"custom/menu": {
+		"format": "{icon}",
+		"format-icons": "󰣇",
+	},
+	"sway/workspaces": {
+		"format": "{icon}",
+		"on-click": "activate",
+		"format-icons": {
+			"urgent": "  ",
+			"focused": "  ",
+			"default": "  "
+		},
+		"tooltip": false,
+	},
+	"custom/clock": {
+		"format": "<span color='#fab387'></span> {}",
+		"exec": "date +'%H:%M'",
+		"interval": 60
+	},
+	"cava": {
+		//        "cava_config": "$XDG_CONFIG_HOME/cava/cava.conf",
+		"framerate": 30,
+		"autosens": 1,
+		"sensitivity": 100,
+		"bars": 14,
+		"lower_cutoff_freq": 50,
+		"higher_cutoff_freq": 10000,
+		"method": "pulse",
+		"source": "auto",
+		"stereo": true,
+		"reverse": false,
+		"bar_delimiter": 0,
+		"monstercat": false,
+		"waves": false,
+		"noise_reduction": 0.77,
+		"input_delay": 2,
+		"format-icons": [
+			"▁",
+			"▂",
+			"▃",
+			"▄",
+			"▅",
+			"▆",
+			"▇",
+			"█"
+		],
+		"actions": {
+			"on-click-right": "mode"
+		}
+	},
+	"tray": {
+		"icon-size": 18,
+		"spacing": 10
+	},
+	"sway/language": {
+		"format": "<span color='#fab387'>󰌏</span> {}",
+	},
+	"pulseaudio": {
+		"scroll-step": 5,
+		"format": "<span color='#fab387'>{icon}</span> {volume}%",
+		"format-icons": {
+			"default": [
+				"",
+				"",
+				""
+			]
+		},
+		"on-click": "pavucontrol",
+		"tooltip": false
+	},
+	"battery": {
+		"states": {
+			"good": 95,
+			"warning": 30,
+			"critical": 20
+		},
+		"format-good": "<span color='#a6e3a1'>{icon}</span> {capacity}%",
+		"format-warning": "<span color='#fab387'>{icon}</span> {capacity}%",
+		"format-critical": "<span color='#f38ba8'>{icon}</span> {capacity}%",
+		"rotate": 0,
+		"format-charging": " {capacity}%",
+		"format-plugged": " {capacity}%",
+		"format-alt": "{time} {icon}",
+		"format-icons": [
+			"󰂎",
+			"󰁺",
+			"󰁻",
+			"󰁼",
+			"󰁽",
+			"󰁾",
+			"󰁿",
+			"󰂀",
+			"󰂁",
+			"󰂂",
+			"󰁹"
+		]
+	},
+	"network": {
+		"tooltip": true,
+		"format-wifi": " ",
+		"rotate": 0,
+		"format-ethernet": " ",
+		"tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>",
+		"format-linked": "󰈀 {ifname} (No IP)",
+		"format-disconnected": "󰖪 ",
+		"tooltip-format-disconnected": "Disconnected",
+		"format-alt": "<span foreground='#99ffdd'> {bandwidthDownBytes}</span> <span foreground='#ffcc66'> {bandwidthUpBytes}</span>",
+		"interval": 2,
+	},
+	"mpris": {
+	"format": "{player_icon} {artist} - {title}",
+	"format-paused": "{status_icon} {artist} - {title}",
+	"player-icons": {
+		"default": "▶",
+		"mpv": "🎵"
+	},
+	"status-icons": {
+		"paused": "⏸"
+	},
+	// "ignored-players": ["firefox"]
+},
+	"escape": true,
+}
