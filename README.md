@@ -1,7 +1,7 @@
 ![image](https://github.com/user-attachments/assets/d8e39426-0bdd-48ea-a9da-ee73e01634a1)
 ![image](https://github.com/user-attachments/assets/c41d072d-64d3-4a45-921b-12d5604a04b9)
 
-# My sway minimalism rice
+# My sway minimalist rice
 
 To enjoy this experience:
 ```bash
