@@ -7,9 +7,9 @@
 		"custom/menu",
 		"sway/workspaces",
 		"cava",
+		"mpris",
 	],
 	"modules-center": [
-		"mpris",
 	],
 	"modules-right": [
 		"tray",
