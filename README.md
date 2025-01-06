@@ -6,11 +6,14 @@
 To enjoy this experience:
 ```bash
 sudo pacman -S sway swaylock swaybg swayidle waybar mako pavucontrol brightnessctl playerctl kitty ttf-jetbrains-mono-nerd
-paru -S sway-desktop-launcher sway-audio-idle-inhibit
+paru -S sway-desktop-launcher sway-audio-idle-inhibit swayosd-git
+sudo systemctl enable --now swayosd-libinput-backend.service
 git clone https://github.com/lasashq/antoine_sway && rm -rf antoine_sway/.git
 cp -rf antoine_sway/* ~
 reboot
 ```
+
+My enabled systemd daemons:
 Apps:
 + WM: sway
 + Bar: waybar
